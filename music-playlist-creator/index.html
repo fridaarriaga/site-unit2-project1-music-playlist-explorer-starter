@@ -3,24 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <!-- Your header content here -->
+    <header class="site-header">
+        <h1 class="site-title">Music Playlist Explorer</h1>
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <button class="nav-link is-active" type="button" data-view="all">All Playlists</button>
+            <button class="nav-link" type="button" data-view="featured">Featured</button>
+        </nav>
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <main class="page-main" id="main-content">
+        <section class="playlist-gallery" aria-labelledby="gallery-title">
+            <h2 class="gallery-title" id="gallery-title">Playlist Gallery</h2>
+
+            <div class="playlist-cards">
+                <ul class="playlist-grid" id="playlist-grid">
+                    <li class="playlist-card" data-playlist-id="pl-001">
+                        <article class="playlist-tile">
+                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Chill Vibes playlist">
+                            <div class="playlist-meta">
+                                <h3 class="playlist-name">Chill Vibes</h3>
+                                <p class="playlist-author">DJ Luna</p>
+                            </div>
+                            <button class="like-button" type="button" aria-pressed="false">
+                                <span class="like-icon" aria-hidden="true">♡</span>
+                                <span class="like-count">5</span>
+                            </button>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <!-- Your footer content here -->
+    <footer class="site-footer">
+        <p class="footer-text">Music Playlist Explorer</p>
     </footer>
+
+    <div class="modal-overlay" id="modal-overlay" hidden>
+        <section
+            class="playlist-modal modal-content"
+            id="playlist-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="playlist-modal-title"
+        >
+            <header class="modal-header">
+                <h2 class="modal-title" id="playlist-modal-title">Playlist Details</h2>
+                <button class="close-button" id="close-modal" type="button" aria-label="Close playlist details">
+                    ×
+                </button>
+            </header>
+            <div class="modal-body" id="modal-content">
+                <article class="modal-playlist-details">
+                    <img
+                        class="modal-playlist-cover"
+                        src="./assets/img/playlist.png"
+                        alt="Cover art for Chill Vibes playlist"
+                    >
+                    <div class="modal-playlist-meta">
+                        <h3 class="modal-playlist-title">Playlist Title</h3>
+                        <p class="modal-playlist-author">Creator Name</p>
+                    </div>
+                </article>
+
+                <ul class="modal-song-list" aria-label="Songs in selected playlist">
+                    <li class="modal-song-row">
+                        <img class="modal-song-cover" src="./assets/img/song.png" alt="Album art placeholder">
+                        <div class="modal-song-meta">
+                            <p class="modal-song-title">Song Title</p>
+                            <p class="modal-song-artist">Artist Name</p>
+                            <p class="modal-song-album">Album Name</p>
+                        </div>
+                        <p class="modal-song-duration">0:00</p>
+                    </li>
+                    <li class="modal-song-row">
+                        <img class="modal-song-cover" src="./assets/img/song.png" alt="Album art placeholder">
+                        <div class="modal-song-meta">
+                            <p class="modal-song-title">Song Title</p>
+                            <p class="modal-song-artist">Artist Name</p>
+                            <p class="modal-song-album">Album Name</p>
+                        </div>
+                        <p class="modal-song-duration">0:00</p>
+                    </li>
+                    <li class="modal-song-row">
+                        <img class="modal-song-cover" src="./assets/img/song.png" alt="Album art placeholder">
+                        <div class="modal-song-meta">
+                            <p class="modal-song-title">Song Title</p>
+                            <p class="modal-song-artist">Artist Name</p>
+                            <p class="modal-song-album">Album Name</p>
+                        </div>
+                        <p class="modal-song-duration">0:00</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="shuffle-button" id="shuffle-songs" type="button">Shuffle Songs</button>
+        </section>
+    </div>
+
     <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
