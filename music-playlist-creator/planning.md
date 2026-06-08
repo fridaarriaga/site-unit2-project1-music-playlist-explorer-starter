@@ -36,3 +36,5 @@ What does the shuffle button do?
 
 ### Decisions Log
 [One entry per milestone where you make spec-informed decisions]
+Milestone 1: Used a semantic page structure (header, main, footer) with a dedicated playlist-cards gallery container, and matched card fields to the planned playlist data (image, name, author, likes). Added a modal overlay structure with hard-coded playlist/song placeholders and outside-click-to-close behavior so modal interactions align with the UI and Interaction Rules.
+Milestone 2: 
