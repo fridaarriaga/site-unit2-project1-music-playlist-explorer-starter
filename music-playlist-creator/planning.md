@@ -82,6 +82,27 @@ initializePlaylistGallery(playlists):
 - Returns/produces: either rendered cards (if array has items) or empty-state message (if array is empty).
 - Appends to: `#playlist-grid`.
 - Uses playlist fields: indirectly through render functions.
+populateModalContent(playlist):
+- Takes in: one selected playlist object (from card click).
+- Updates DOM elements: `#modal-content` (replaces modal body content), and uses the existing modal structure inside `#modal-overlay` / `#playlist-modal`.
+- What the modal should look like when finished: a centered pop-up showing the selected playlist cover and metadata at the top, followed by a list of song rows with consistent styling and readable song details.
+- Information that must be present: playlist `Cover`, `Title`, and `Creator`; for each song in `songs`, include `coverImage`, `title`, `artist`, `album`, and `duration`.
+
+
+togglePlaylistLike(playlistId):
+- Takes in: `playlistId` (string) for the clicked playlist card.
+- Data model updates:
+  - If `isLiked === false` (like branch): set `isLiked` to `true` and set `Likes = Likes + 1`.
+  - If `isLiked === true` (unlike branch): set `isLiked` to `false` and set `Likes = Likes - 1`.
+- DOM updates:
+  - Update the clicked card's like icon (`♡` -> `♥` on like, `♥` -> `♡` on unlike).
+  - Update the clicked card's like count text to match the new `Likes` value.
+  - Keep updates scoped to the clicked playlist card only (do not rerender unrelated cards).
+- Constraints:
+  - `Likes` must never go below `0`.
+  - One click should apply exactly one state change (no double increments/decrements).
+  - Data state and DOM state must stay in sync after each click.
+  - If modal view also shows like state later, both card and modal must reflect the same updated value.
 
 ### AI Feature Spec (Milestone 8)
 [Leave blank — fill in before Milestone 8]
