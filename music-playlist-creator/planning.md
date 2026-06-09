@@ -17,13 +17,6 @@ song:
     - duration (string) — track length displayed in mm:ss format.
     - coverImage (string) — path or URL to the song/album thumbnail image.
 
-Song:
-    - id (string) — unique identifier for a song used for rendering and list operations.
-    - Song Title (string) — Title of the song
-    - Artist Name (string) — Name of the singer who sang the song
-    - Cover (str) — path or URL to the song/album thumbnail image.
-    - Album Name (str) — The name of the album this song belongs to 
-    - Duration (int) - The time of the length of the song.
 
 
 
@@ -69,6 +62,26 @@ Cards wrap cleanly from desktop to tablet to mobile, the header adjusts on small
 
 ### Function Specs
 [Add function specs here as you plan each milestone]
+createPlaylistCard(playlist):
+- Takes in: one playlist object.
+- Returns/produces: one `<li class="playlist-card">` element containing cover image, title, creator, and like count.
+- Appends to: does not append directly; returns the card element.
+- Uses playlist fields: `id`, `Title`, `Creator`, `Cover`, `Likes`.
+renderPlaylistCards(playlists):
+- Takes in: array of playlist objects.
+- Returns/produces: clears current cards and renders a card for each playlist.
+- Appends to: `#playlist-grid` (inside `.playlist-cards`).
+- Uses playlist fields: all fields used by `createPlaylistCard`.
+renderNoPlaylistsMessage():
+- Takes in: no arguments.
+- Returns/produces: a message element with text like “No playlists found.”
+- Appends to: `#playlist-grid`.
+- Uses playlist fields: none.
+initializePlaylistGallery(playlists):
+- Takes in: array of playlist objects.
+- Returns/produces: either rendered cards (if array has items) or empty-state message (if array is empty).
+- Appends to: `#playlist-grid`.
+- Uses playlist fields: indirectly through render functions.
 
 ### AI Feature Spec (Milestone 8)
 [Leave blank — fill in before Milestone 8]
