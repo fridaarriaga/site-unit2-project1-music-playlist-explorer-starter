@@ -1,7 +1,31 @@
 ## Music Playlist Explorer — Planning Spec
 
 ### Data Shape
-[Leave blank — fill in before Milestone 3]
+Playlist:
+    - id (string) — unique identifier for a playlist used to track clicks, likes, and modal selection.
+    - Title (string) — Title of the playlist
+    - Creator (string) — Name of the creator who created the playlist
+    - Cover (str) — path or URL to the playlist cover image.
+    - Likes (int) — Number of likes this playlist has 
+    - isLiked (boolean) — whether the current user has liked this playlist in the UI.
+    - songs (array<song>) — list of song objects that belong to this playlist.
+song:
+    - id (string) — unique identifier for a song used for rendering and list operations.
+    - title (string) — name of the song shown in the playlist modal.
+    - artist (string) — artist name displayed for the song.
+    - album (string) — album name shown as supporting song metadata.
+    - duration (string) — track length displayed in mm:ss format.
+    - coverImage (string) — path or URL to the song/album thumbnail image.
+
+Song:
+    - id (string) — unique identifier for a song used for rendering and list operations.
+    - Song Title (string) — Title of the song
+    - Artist Name (string) — Name of the singer who sang the song
+    - Cover (str) — path or URL to the song/album thumbnail image.
+    - Album Name (str) — The name of the album this song belongs to 
+    - Duration (int) - The time of the length of the song.
+
+
 
 ### UI and Interaction Rules
 [Leave blank — fill in before Milestone 1]
