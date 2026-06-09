@@ -104,6 +104,26 @@ togglePlaylistLike(playlistId):
   - Data state and DOM state must stay in sync after each click.
   - If modal view also shows like state later, both card and modal must reflect the same updated value.
 
+Shuffle approach: preserve original order.
+shufflePlaylistSongs(playlistId):
+- Takes in: `playlistId` (string) for the currently open playlist.
+- Returns: updated shuffled songs array (and updates playlist state used by the modal).
+- Original order preservation:
+  - Store the initial order once in `playlist.originalSongs` (copy of songs).
+  - Keep `playlist.songs` as the active display order.
+- UI after shuffling:
+  - Modal remains open.
+  - Same playlist cover/title/creator stays at top.
+  - Song rows appear in a new order immediately after click.
+- Multiple shuffle clicks:
+  - Each click shuffles the current `playlist.songs` again.
+  - The app can continue reshuffling indefinitely.
+  - If the new order happens to match the previous order, that is acceptable (random chance).
+- Constraints:
+  - Song count must not change.
+  - No song entries are removed/duplicated.
+  - Shuffle affects only the selected playlist in the modal.
+
 ### AI Feature Spec (Milestone 8)
 [Leave blank — fill in before Milestone 8]
 
