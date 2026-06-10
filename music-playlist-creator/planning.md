@@ -131,3 +131,10 @@ shufflePlaylistSongs(playlistId):
 [One entry per milestone where you make spec-informed decisions]
 Milestone 1: Used a semantic page structure (header, main, footer) with a dedicated playlist-cards gallery container, and matched card fields to the planned playlist data (image, name, author, likes). Added a modal overlay structure with hard-coded playlist/song placeholders and outside-click-to-close behavior so modal interactions align with the UI and Interaction Rules.
 Milestone 2: Completed visual styling and responsiveness. I added rose-themed branding, rock-style typography, and polished card styling (spacing, shadows, hover lift). I also improved modal presentation with a centered pop-up overlay and made the layout adapt better across desktop, tablet, and mobile using Flexbox. Finally, I added Featured/All nav behavior and fixed modal close behavior by ensuring hidden overlays are not displayed.
+
+Featured Page:
+Goal: create a dedicated Featured page that randomly selects and displays a playlist — with an enlarged cover image and playlist name on the left, and the song list on the right — and to add navigation between the Featured page and the All Playlists page.
+-> The layout of the page — what sections exist, what goes where. - The header will be at the top. It will show that the Featured page is higlighted to show you are in the feature page. 
+A function spec for your random playlist selection function: what does it take in, what does it return, and when does it run?
+->It takes in an object of all the playlists, like a list. It returns one of the playlists and it runs when you click on the Featured page and a random playlist is picked. 
+How navigation between the Featured page and the All Playlists page will work. --> You can move between the featured and all playlists page by clicking on the words in the header and it will appear hilighted depending on what page you're in. 
