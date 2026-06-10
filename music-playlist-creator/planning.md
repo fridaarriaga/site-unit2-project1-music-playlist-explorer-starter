@@ -52,12 +52,10 @@ I styled the header and footer so they stand out from the main content, then gav
 The homepage currently shows 3 playlist cards using the same box format for consistency.  
 I updated the color palette from red to a rose theme and used a rock-style font pairing (Bebas Neue for titles + Inter for readable text).
 
-Modal:
-The modal uses a full-screen semi-transparent overlay and a centered floating content panel with rounded corners and a visible shadow.  
+Modal:The modal uses a full-screen semi-transparent overlay and a centered floating content panel with rounded corners and a visible shadow.  
 It opens when a playlist card is clicked, and closes from either the X button or clicking outside the modal panel.
 
-Responsive Design: 
-I used Flexbox to keep the layout responsive across screen sizes.  
+Responsive Design: I used Flexbox to keep the layout responsive across screen sizes.  
 Cards wrap cleanly from desktop to tablet to mobile, the header adjusts on smaller screens, and the modal content stacks better on narrow viewports.
 
 ### Function Specs
@@ -124,11 +122,11 @@ shufflePlaylistSongs(playlistId):
   - No song entries are removed/duplicated.
   - Shuffle affects only the selected playlist in the modal.
 
-    -getPlaylistDescription:
-        -What does this function take in? Playlist title and song list
-        -What does it return? 2–3 sentence description that captures the vibe and theme of the playlist
-        -What API does it call and with what prompt structure? OpenRouter API. You are a user that is curious about the playlist mood and vibe and about the songs. Assume you don't know about the songs prior and is quickly trying to find a playlist to listen to. 
-        -What happens on error? It should say: I'm sorry, I couldn't generate a proper description at this time. Try again later. 
+-getPlaylistDescription:
+            -What does this function take in? Playlist title and song list
+            -What does it return? 2–3 sentence description that captures the vibe and theme of the playlist
+            -What API does it call and with what prompt structure? OpenRouter API. You are a user that is curious about the playlist mood and vibe and about the songs. Assume you don't know about the songs prior and is quickly trying to find a playlist to listen to. Repond in casual tone but not too informal. 
+            -What happens on error? It should say: I'm sorry, I couldn't generate a proper description at this time. Try again later. 
 
 
 ### AI Feature Spec (Milestone 8)
