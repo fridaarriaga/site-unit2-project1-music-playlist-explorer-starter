@@ -20,88 +20,25 @@
     </header>
 
     <main class="page-main" id="main-content">
-        <section class="playlist-gallery" aria-labelledby="gallery-title">
+        <section class="playlist-gallery" id="all-playlists-view" aria-labelledby="gallery-title">
             <h2 class="gallery-title" id="gallery-title">Playlist Gallery</h2>
 
             <div class="playlist-cards">
-                <ul class="playlist-grid" id="playlist-grid">
-                    <li class="playlist-card" data-playlist-id="pl-001">
-                        <article class="playlist-tile">
-                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Chill Vibes playlist">
-                            <div class="playlist-meta">
-                                <h3 class="playlist-name">Chill Vibes</h3>
-                                <p class="playlist-author">DJ Luna</p>
-                            </div>
-                            <button class="like-button" type="button" aria-pressed="false">
-                                <span class="like-icon" aria-hidden="true">♡</span>
-                                <span class="like-count">5</span>
-                            </button>
-                        </article>
-                    </li>
-                    <li class="playlist-card" data-playlist-id="pl-002">
-                        <article class="playlist-tile">
-                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Summer Nights playlist">
-                            <div class="playlist-meta">
-                                <h3 class="playlist-name">Summer Nights</h3>
-                                <p class="playlist-author">Groove Guardian</p>
-                            </div>
-                            <button class="like-button" type="button" aria-pressed="false">
-                                <span class="like-icon" aria-hidden="true">♡</span>
-                                <span class="like-count">26</span>
-                            </button>
-                        </article>
-                    </li>
-                    <li class="playlist-card" data-playlist-id="pl-003">
-                        <article class="playlist-tile">
-                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Workout Beats playlist">
-                            <div class="playlist-meta">
-                                <h3 class="playlist-name">Workout Beats</h3>
-                                <p class="playlist-author">Harmony Herald</p>
-                            </div>
-                            <button class="like-button" type="button" aria-pressed="false">
-                                <span class="like-icon" aria-hidden="true">♡</span>
-                                <span class="like-count">10</span>
-                            </button>
-                        </article>
-                    </li>
-                    <li class="playlist-card" data-playlist-id="pl-004">
-                        <article class="playlist-tile">
-                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Road Trip Anthems playlist">
-                            <div class="playlist-meta">
-                                <h3 class="playlist-name">Road Trip Anthems</h3>
-                                <p class="playlist-author">Playlist Pioneer</p>
-                            </div>
-                            <button class="like-button" type="button" aria-pressed="false">
-                                <span class="like-icon" aria-hidden="true">♡</span>
-                                <span class="like-count">0</span>
-                            </button>
-                        </article>
-                    </li>
-                    <li class="playlist-card" data-playlist-id="pl-005">
-                        <article class="playlist-tile">
-                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Boss Chick Energy playlist">
-                            <div class="playlist-meta">
-                                <h3 class="playlist-name">Boss Chick Energy</h3>
-                                <p class="playlist-author">Tempo Tactician</p>
-                            </div>
-                            <button class="like-button" type="button" aria-pressed="false">
-                                <span class="like-icon" aria-hidden="true">♡</span>
-                                <span class="like-count">100</span>
-                            </button>
-                        </article>
-                    </li>
-                    <li class="playlist-card" data-playlist-id="pl-006">
-                        <article class="playlist-tile">
-                            <img class="playlist-cover" src="./assets/img/playlist.png" alt="Cover art for Rainy Nights playlist">
-                            <div class="playlist-meta">
-                                <h3 class="playlist-name">Rainy Nights</h3>
-                                <p class="playlist-author">Sonic Sage</p>
-                            </div>
-                            <button class="like-button" type="button" aria-pressed="false">
-                                <span class="like-icon" aria-hidden="true">♡</span>
-                                <span class="like-count">1</span>
-                            </button>
-                        </article>
+                <ul class="playlist-grid" id="playlist-grid"></ul>
+            </div>
+        </section>
+
+        <section class="featured-page" id="featured-view" aria-label="Featured playlist" hidden>
+            <div class="featured-layout" id="featured-layout">
+                <article class="featured-playlist-card">
+                    <img class="featured-cover" id="featured-cover" src="./assets/img/playlist.png" alt="Featured playlist cover">
+                    <h3 class="featured-name" id="featured-name">Playlist Name</h3>
+                    <p class="featured-author" id="featured-author">Creator Name</p>
+                </article>
+                <ul class="featured-song-list" id="featured-song-list">
+                    <li class="featured-song-row">
+                        <span>Song Title</span>
+                        <span>0:00</span>
                     </li>
                 </ul>
             </div>
@@ -169,10 +106,15 @@
                     </li>
                 </ul>
             </div>
-            <button class="shuffle-button" id="shuffle-songs" type="button">Shuffle Songs</button>
+            <div class="modal-actions">
+                <button class="shuffle-button" id="shuffle-songs" type="button">Shuffle</button>
+                <button class="description-button" id="get-description-btn" type="button">Get Description</button>
+            </div>
+            <p class="playlist-description" id="playlist-description" aria-live="polite"></p>
         </section>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "pl-001",
+    "Title": "Mi Gente Latino",
+    "Creator": "Johanna Pelayo",
+    "Cover": "https://images.unsplash.com/photo-1542835435-4fa357baa00b?q=80&w=1391&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "Likes": 0,
+    "isLiked": false,
+    "songs": [
+      {
+        "id": "s-001",
+        "title": "El Chico Del Apartamento 512",
+        "artist": "Selena",
+        "album": "Amor Prohibido",
+        "duration": "3:28",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-002",
+        "title": "NUEVAYoL",
+        "artist": "Bad Bunny",
+        "album": "DtMF",
+        "duration": "3:03",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-003",
+        "title": "Oye Mi Amor",
+        "artist": "Maná",
+        "album": "¿Dónde Jugarán Los Niños?",
+        "duration": "4:23",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": "pl-002",
+    "Title": "Cleaning Time",
+    "Creator": "Frida Arriaga",
+    "Cover": "https://plus.unsplash.com/premium_vector-1721387157671-325af7c40ff4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xlYW5pbmd8ZW58MHx8MHx8fDA%3D",
+    "Likes": 26,
+    "isLiked": false,
+    "songs": [
+      {
+        "id": "s-004",
+        "title": "Secreto de Amor",
+        "artist": "Joan Sebastian",
+        "album": "Secreto de Amor",
+        "duration": "4:33",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-005",
+        "title": "Abrázame Muy Fuerte",
+        "artist": "Juan Gabriel",
+        "album": "Abrázame Muy Fuerte",
+        "duration": "4:01",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-006",
+        "title": "Olvidame y Pega la Vuelta",
+        "artist": "Pimpinela",
+        "album": "Olvidame y Pega la Vuelta",
+        "duration": "3:05",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": "pl-003",
+    "Title": "Run Run Run",
+    "Creator": "Imanol Arriaga",
+    "Cover": "https://plus.unsplash.com/premium_vector-1719244112858-82dffa950dba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cnVubmluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    "Likes": 10,
+    "isLiked": true,
+    "songs": [
+      {
+        "id": "s-007",
+        "title": "Can't Hold Us",
+        "artist": "Macklemore & Ryan Lewis",
+        "album": "The Heist",
+        "duration": "4:18",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-008",
+        "title": "La La La",
+        "artist": "Shakira",
+        "album": "2014 FIFA World Cup Official Album",
+        "duration": "3:17",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-009",
+        "title": "Final Set",
+        "artist": "Tempo Unit",
+        "album": "No Excuses",
+        "duration": "3:56",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": "pl-004",
+    "Title": "Time to Hit the Hay",
+    "Creator": "Frida Arriaga",
+    "Cover": "photos/dog.jpeg",
+    "Likes": 0,
+    "isLiked": false,
+    "songs": [
+      {
+        "id": "s-010",
+        "title": "Nuvole Bianche",
+        "artist": "Ludovico Einaudi",
+        "album": "Una Mattina",
+        "duration": "5:57",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-011",
+        "title": "Nuvole Bianche",
+        "artist": "Experience",
+        "album": "In A Time Lapse",
+        "duration": "5:15",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-012",
+        "title": "River Flows in You",
+        "artist": "Yiruma",
+        "album": "First Love",
+        "duration": "3:08",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": "pl-005",
+    "Title": "I'm not throwing away my shot",
+    "Creator": "Frida Arriaga",
+    "Cover": "https://images.unsplash.com/photo-1568650436496-a2a288c7be3f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "Likes": 100,
+    "isLiked": true,
+    "songs": [
+      {
+        "id": "s-013",
+        "title": "Non-Stop",
+        "artist": "Lin-Manuel Miranda",
+        "album": "Hamilton",
+        "duration": "3:33",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-014",
+        "title": "Wait for It",
+        "artist": "Lin-Manuel Miranda",
+        "album": "Hamilton",
+        "duration": "2:57",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-015",
+        "title": "Dear Theodosia",
+        "artist": "Lin-Manuel Miranda",
+        "album": "Hamilton",
+        "duration": "3:18",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": "pl-006",
+    "Title": "Mexican Rock",
+    "Creator": "Manuel Arriaga",
+    "Cover": "https://images.unsplash.com/photo-1537222961176-50d25fff78ef?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "Likes": 1,
+    "isLiked": false,
+    "songs": [
+      {
+        "id": "s-016",
+        "title": "Lamento Boliviano",
+        "artist": "Los Enanitos Verdes",
+        "album": "Big Bang",
+        "duration": "4:22",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-017",
+        "title": "Devuélveme a mi chica",
+        "artist": "Hombres G",
+        "album": "Hombres G",
+        "duration": "3:29",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": "s-018",
+        "title": "Mariposa Traicionera",
+        "artist": "Maná",
+        "album": "Revolución de Amor",
+        "duration": "3:51",
+        "coverImage": "https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  }
+]
