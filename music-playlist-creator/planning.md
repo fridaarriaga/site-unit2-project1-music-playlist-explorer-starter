@@ -124,8 +124,20 @@ shufflePlaylistSongs(playlistId):
   - No song entries are removed/duplicated.
   - Shuffle affects only the selected playlist in the modal.
 
+    -getPlaylistDescription:
+        -What does this function take in? Playlist title and song list
+        -What does it return? 2–3 sentence description that captures the vibe and theme of the playlist
+        -What API does it call and with what prompt structure? OpenRouter API. You are a user that is curious about the playlist mood and vibe and about the songs. Assume you don't know about the songs prior and is quickly trying to find a playlist to listen to. 
+        -What happens on error? It should say: I'm sorry, I couldn't generate a proper description at this time. Try again later. 
+
+
 ### AI Feature Spec (Milestone 8)
-[Leave blank — fill in before Milestone 8]
+Role: What role should the model play?
+Task: What is the model being asked to do? --> generate a description for a music playlist based on its name, author, and song list.
+Inputs: What playlist data will you pass to the model? -> Playlist name, author, and song list
+Output format: What should the response look like? --> 2–3 sentence description that captures the vibe and theme of the playlist
+Constraints: What should the model avoid? --> don't list the songs individually, don't use generic marketing language, don't repeat the title of the playlist verbatim.
+Failure behavior: What should the UI show if the API call fails or the model doesn't respond? -> It should say: I'm sorry, I couldn't generate a proper description at this time. Try again later. 
 
 ### Decisions Log
 [One entry per milestone where you make spec-informed decisions]
